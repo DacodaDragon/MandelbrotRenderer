@@ -9,21 +9,21 @@ To execute the program, simply run:
 
 Without any parameters the exe will output a very basic 1920x1080 image of a mandelbrot named "Mandelbrot.bmp". The file will be located in the same folder as the exe. There are multiple commandline parameters you can provide to change the configuration:
 
-> **-fn <string>**
+> **-fn [string]**
 > Sets the filename of the final image
 
-> **-r <int> <int>**
+> **-r [int] [int]**
 > Sets the resolution of the final image.
 > The dimensions are ordered as Width - Height
 
-> **-i <int>**
+> **-i [int]**
 > Sets the maxumum amount of iterations used to render the mandelbrot
 
-> **-s <double> <double> <double> <double>**
+> **-s [double] [double] [double] [double]**
 > Sets the targets section of the mandelbrot that needs to be rendered, The parameters are ordered as "Left, Right, Top, Bottom", so a full mandelbrot would be "-s 0 1 0 1". If you want to render a specific section of the mandelbrot, you can calculate it like this:
 > **Image here**
 
-> **-c <colorcurve>**
+> **-c [colorcurve]**
 > Sets the colors of the image. 
 >
 > The formula of the mandelbrot creates a series of doubles, the ColorCurve is the thing that transforms that value into a rgb color. You can change the curves yourself by providing it in a certain format:
@@ -41,7 +41,7 @@ Without any parameters the exe will output a very basic 1920x1080 image of a man
 > ```
 > -c "r 0 0 0.1 0.5 1 0 g 0 0 0.1 0.5 1 0.5 b 0 0 0.1 0.5 1 1"
 > ```
-> In this curve we have defined anothe point in the red curve at value 0.5 that would result in 0.2. which results in this color curve:
+> In this curve we have defined another point at value 0.1 that would result in 0.5. which results in the following color curve:
 > ![](https://i.imgur.com/9mn43Ne.png)
 > ![](https://i.imgur.com/9kLVSGX.png)
 >
