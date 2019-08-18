@@ -21,7 +21,7 @@ Without any parameters the exe will output a very basic 1920x1080 image of a man
 
 > **-s [double] [double] [double] [double]**
 > Sets the targets section of the mandelbrot that needs to be rendered, The parameters are ordered as "Left, Right, Top, Bottom", so a full mandelbrot would be "-s 0 1 0 1". If you want to render a specific section of the mandelbrot, you can calculate it like this:
-> **Image here**
+> ![](https://i.imgur.com/qoQ8RQX.png)
 
 > **-c [colorcurve]**
 > Sets the colors of the image. 
